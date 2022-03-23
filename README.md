@@ -7,7 +7,7 @@
 
 This is the codebase for the CZ (modified /tg/station) flavoured fork of SpaceStation 13.
 
-Space Station 13 is a paranoia-laden round-based roleplaying game set against the backdrop of a nonsensical, metal death trap masquerading as a space station, with charming spritework designed to represent the sci-fi setting and its dangerous undertones. Have fun, and survive!
+CZ is a branch of the STALKER build made by me and for fun.
 
 ## DOWNLOADING
 [Downloading](.github/DOWNLOADING.md)
