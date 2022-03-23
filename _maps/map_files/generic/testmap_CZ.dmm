@@ -1,0 +1,32 @@
+"a" = (/turf/open/space/basic,/area/space)
+"b" = (/turf/closed/wall/r_wall,/area/space)
+"c" = (/turf/open/floor/plasteel{dir = 6; icon_state = "asteroid8"; name = "sand"},/area/space)
+"d" = (/obj/effect/landmark/latejoin,/turf/open/floor/plasteel{dir = 6; icon_state = "asteroid8"; name = "sand"},/area/space)
+"e" = (/turf/open/floor/plasteel{icon_state = "asteroid5"; name = "plating"},/area/space)
+"f" = (/obj/effect/landmark/start,/turf/open/floor/plasteel{icon_state = "asteroid5"; name = "plating"},/area/space)
+"g" = (/obj/effect/landmark/start,/turf/open/floor/plasteel{dir = 6; icon_state = "asteroid8"; name = "sand"},/area/space)
+"h" = (/obj/effect/landmark/start/new_player,/turf/open/space/basic,/area/space)
+"i" = (/turf/indestructible/splashscreen,/area/space)
+
+(1,1,1) = {"
+aaaaaabbbbbbbaaaaaaa
+aaaaaabcdddebaaaaaaa
+aaaaaabcfggcbaaaaaaa
+aaaaaabcceccbaaaaaaa
+aaaaaabbbbbbbaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaabbbaaaaaaaaaaa
+aaaaaabhbaaaaaaaaaaa
+aaaaaabbbaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+iaaaaaaaaaaaaaaaaaaa
+"}
