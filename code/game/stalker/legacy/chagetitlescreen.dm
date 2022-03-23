@@ -2,6 +2,9 @@
 	set category = "Admin"
 	set name = "TSChange"
 	set desc = "Changes title screen to whatever."
+	set hidden = TRUE
+	if(!check_rights(0))
+		return
 
 
 //	var/title = input("Input what title you want: 1 to 4. 1 is default","title", "1") as text|null in list("1", "2", "3", "4")

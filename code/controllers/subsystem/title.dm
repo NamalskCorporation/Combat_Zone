@@ -11,7 +11,7 @@ SUBSYSTEM_DEF(title)
 
 /datum/controller/subsystem/title/Initialize()
 
-	icon = 'icons/misc/sand_room.dmi'
+	icon = new(fcopy_rsc("icons/misc/sand_room.dmi"))
 	var/icon_state = num2text(rand(1, 4))
 //TODO: make normal title screen choice for lobby
 
