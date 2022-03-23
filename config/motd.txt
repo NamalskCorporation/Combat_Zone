@@ -1,5 +1,9 @@
 <!-- Most valid html will work in here, excluding images. -->
 
-<h1>Welcome to Space Station 13!</h1>
+<h1>Welcome to Accident 1991 (Bunker Hill)!</h1>
 
-<i>This server is running a /tg/station 13 Git build.</i>
+<i>This server is running a modified /stalker/station build.</i>
+<i>We posess a normal atmosphere of exploring of a bunker and it's surroundings.</i>
+<i>Choose to be army, GO or civilian.</i>
+
+<h2>The year is 1991 in an alternative USSR!</h2>
