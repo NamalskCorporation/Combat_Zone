@@ -11,7 +11,7 @@
 	name = "strange jacket"
 	desc = "Плотна&#255; кожана&#255; куртка довольно интересной раскраски. Ткань усилена очень легкими кевларовыми пластинами, что обеспечивает слегка повышенную защиту, но не замедл&#255;ет носител&#255;. Неэффективна против аномальных и других воздействий."
 	icon_state = "kozhanka_mono_wh"
-	item_state = "labcoat"
+//	item_state = "labcoat"
 	hoodtype = /obj/item/clothing/head/winterhood/stalker/kozhanka_wh/monolith
 	armor = list(melee = 15, bullet = 15, laser = 15,burn = 15, bomb = 0, bio = 15, rad = 0, electro = 15)
 

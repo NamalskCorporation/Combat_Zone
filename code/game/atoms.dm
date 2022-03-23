@@ -8,7 +8,7 @@
 	layer = TURF_LAYER
 	plane = GAME_PLANE
 	appearance_flags = TILE_BOUND
-
+	var/eng_desc = "" //ARMY: for compability with stalker
 	/// pass_flags that we are. If any of this matches a pass_flag on a moving thing, by default, we let them through.
 	var/pass_flags_self = NONE
 
@@ -591,8 +591,15 @@
 /atom/proc/examine(mob/user)
 	. = list("[get_examine_string(user, TRUE)].")
 
-	if(desc)
+	if(eng_desc)
+		. += "ENG: "
+		. += eng_desc
+		. += "\n"
+		. += "RU: "
 		. += desc
+	else
+		if(desc)
+			. += desc
 
 	if(custom_materials)
 		var/list/materials_list = list()
