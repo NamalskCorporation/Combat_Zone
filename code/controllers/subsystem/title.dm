@@ -8,6 +8,49 @@ SUBSYSTEM_DEF(title)
 	var/icon/previous_icon
 	var/turf/closed/indestructible/splashscreen/splash_turf
 
+
+/datum/controller/subsystem/title/Initialize()
+
+	icon = 'icons/misc/sand_room.dmi'
+	var/icon_state = num2text(rand(1, 4))
+//TODO: make normal title screen choice for lobby
+
+
+
+	if(splash_turf)
+		splash_turf.icon = icon
+		splash_turf.icon_state = icon_state
+
+	return ..()
+
+/datum/controller/subsystem/title/vv_edit_var(var_name, var_value)
+	. = ..()
+	if(.)
+		switch(var_name)
+			if(NAMEOF(src, icon))
+				if(splash_turf)
+					splash_turf.icon = icon
+
+/datum/controller/subsystem/title/Shutdown()
+	if(file_path)
+		var/F = file("data/previous_title.dat")
+		WRITE_FILE(F, file_path)
+
+	for(var/thing in GLOB.clients)
+		if(!thing)
+			continue
+		var/atom/movable/screen/splash/S = new(thing, FALSE)
+		S.Fade(FALSE,FALSE)
+
+/datum/controller/subsystem/title/Recover()
+	icon = SStitle.icon
+	splash_turf = SStitle.splash_turf
+	file_path = SStitle.file_path
+	previous_icon = SStitle.previous_icon
+
+
+
+/*
 /datum/controller/subsystem/title/Initialize()
 	if(file_path && icon)
 		return
@@ -67,3 +110,5 @@ SUBSYSTEM_DEF(title)
 	splash_turf = SStitle.splash_turf
 	file_path = SStitle.file_path
 	previous_icon = SStitle.previous_icon
+
+Old TS system */

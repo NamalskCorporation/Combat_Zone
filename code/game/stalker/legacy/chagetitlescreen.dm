@@ -1,4 +1,4 @@
-/client/proc/changetitlescreen(var/title in list("1", "2", "3", "4", "titleold", "esc1", "esc2", "esc3", "cringe"))
+/client/proc/changetitlescreen(var/title in icon_states('icons/misc/sand_room.dmi'))
 	set category = "Admin"
 	set name = "TSChange"
 	set desc = "Changes title screen to whatever."
@@ -12,7 +12,7 @@
 	message_admins(msg, 0)
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "[key_name(src)] Changetitlescreen to [title] ") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
-	for(var/turf/indestructible/splashscreen/O)
+	for(var/turf/closed/indestructible/splashscreen/O)
 		O.icon_state = title
 
 
