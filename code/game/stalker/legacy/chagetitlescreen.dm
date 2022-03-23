@@ -10,7 +10,7 @@
 	var/msg = "[key_name(src)] has modified titlescreen to [title]" //[key_name(src)]to [title]
 	log_admin(msg, 0)
 	message_admins(msg, 0)
-	feedback_add_details("admin_verb","titlescreen") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+//	feedback_add_details("admin_verb","titlescreen") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 	for(var/turf/indestructible/splashscreen/O)
 		O.icon_state = title
